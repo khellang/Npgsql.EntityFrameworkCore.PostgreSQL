@@ -31,7 +31,7 @@ namespace Npgsql.EntityFrameworkCore.PostgreSQL.Query
         /// <summary>
         /// Initializes resources for unit tests.
         /// </summary>
-        /// <param name="fixture"> The fixture of resources for testing. </param>
+        /// <param name="fixture">The fixture of resources for testing.</param>
         public NetworkQueryNpgsqlTest(NetworkAddressQueryNpgsqlFixture fixture)
         {
             Fixture = fixture;

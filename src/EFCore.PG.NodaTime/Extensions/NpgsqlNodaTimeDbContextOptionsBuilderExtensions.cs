@@ -15,7 +15,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         /// Use NetTopologySuite to access SQL Server spatial data.
         /// </summary>
-        /// <returns> The options builder so that further configuration can be chained. </returns>
+        /// <returns>The options builder so that further configuration can be chained.</returns>
         public static NpgsqlDbContextOptionsBuilder UseNodaTime(
             [NotNull] this NpgsqlDbContextOptionsBuilder optionsBuilder)
         {

@@ -18,7 +18,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="value">The value to locate in the range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="range"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the range contains the specified value; otherwise, <value>false</value>.
+        /// <value>true</value>if the range contains the specified value; otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool Contains<T>(this NpgsqlRange<T> range, T value) => throw ClientEvaluationNotSupportedException();
@@ -30,7 +30,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="b">The specified range to locate in the range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="a"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the range contains the specified range; otherwise, <value>false</value>.
+        /// <value>true</value>if the range contains the specified range; otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool Contains<T>(this NpgsqlRange<T> a, NpgsqlRange<T> b) => throw ClientEvaluationNotSupportedException();
@@ -42,7 +42,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="b">The range in which to locate the specified range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="a"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the range contains the specified range; otherwise, <value>false</value>.
+        /// <value>true</value>if the range contains the specified range; otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool ContainedBy<T>(this NpgsqlRange<T> a, NpgsqlRange<T> b) => throw ClientEvaluationNotSupportedException();
@@ -54,7 +54,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="b">The second range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="a"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the ranges overlap (share points in common); otherwise, <value>false</value>.
+        /// <value>true</value>if the ranges overlap (share points in common); otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool Overlaps<T>(this NpgsqlRange<T> a, NpgsqlRange<T> b) => throw ClientEvaluationNotSupportedException();
@@ -66,7 +66,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="b">The second range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="a"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the first range is strictly to the left of the second; otherwise, <value>false</value>.
+        /// <value>true</value>if the first range is strictly to the left of the second; otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool IsStrictlyLeftOf<T>(this NpgsqlRange<T> a, NpgsqlRange<T> b) => throw ClientEvaluationNotSupportedException();
@@ -78,7 +78,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="b">The second range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="a"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the first range is strictly to the right of the second; otherwise, <value>false</value>.
+        /// <value>true</value>if the first range is strictly to the right of the second; otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool IsStrictlyRightOf<T>(this NpgsqlRange<T> a, NpgsqlRange<T> b) => throw ClientEvaluationNotSupportedException();
@@ -90,7 +90,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="b">The second range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="a"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the first range does not extend to the left of the second; otherwise, <value>false</value>.
+        /// <value>true</value>if the first range does not extend to the left of the second; otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool DoesNotExtendLeftOf<T>(this NpgsqlRange<T> a, NpgsqlRange<T> b) => throw ClientEvaluationNotSupportedException();
@@ -102,7 +102,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="b">The second range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="a"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the first range does not extend to the right of the second; otherwise, <value>false</value>.
+        /// <value>true</value>if the first range does not extend to the right of the second; otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool DoesNotExtendRightOf<T>(this NpgsqlRange<T> a, NpgsqlRange<T> b) => throw ClientEvaluationNotSupportedException();
@@ -114,7 +114,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="b">The second range.</param>
         /// <typeparam name="T">The type of the elements of <paramref name="a"/>.</typeparam>
         /// <returns>
-        /// <value>true</value> if the ranges are adjacent; otherwise, <value>false</value>.
+        /// <value>true</value>if the ranges are adjacent; otherwise,<value>false</value>.
         /// </returns>
         /// <exception cref="NotSupportedException">{method} is only intended for use via SQL translation as part of an EF Core LINQ query.</exception>
         public static bool IsAdjacentTo<T>(this NpgsqlRange<T> a, NpgsqlRange<T> b) => throw ClientEvaluationNotSupportedException();

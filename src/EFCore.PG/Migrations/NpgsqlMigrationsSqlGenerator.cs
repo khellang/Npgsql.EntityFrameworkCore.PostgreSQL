@@ -870,9 +870,9 @@ namespace Npgsql.EntityFrameworkCore.PostgreSQL.Migrations
         /// Builds commands for the given <see cref="InsertDataOperation" /> by making calls on the given
         /// <see cref="MigrationCommandListBuilder" />, and then terminates the final command.
         /// </summary>
-        /// <param name="operation"> The operation. </param>
-        /// <param name="model"> The target model which may be <c>null</c> if the operations exist without a model. </param>
-        /// <param name="builder"> The command builder to use to build the commands. </param>
+        /// <param name="operation">The operation.</param>
+        /// <param name="model">The target model which may be <c>null</c> if the operations exist without a model.</param>
+        /// <param name="builder">The command builder to use to build the commands.</param>
         protected override void Generate(
             InsertDataOperation operation,
             IModel model,

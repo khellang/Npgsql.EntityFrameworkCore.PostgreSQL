@@ -23,8 +23,8 @@ namespace Microsoft.EntityFrameworkCore
         ///         provider to use as part of configuring the context.
         ///     </para>
         /// </summary>
-        /// <param name="database"> The facade from <see cref="DbContext.Database" />. </param>
-        /// <returns> True if SQL Server is being used; false otherwise. </returns>
+        /// <param name="database">The facade from <see cref="DbContext.Database" />.</param>
+        /// <returns>True if SQL Server is being used; false otherwise.</returns>
         public static bool IsNpgsql([NotNull] this DatabaseFacade database)
             => database.ProviderName.Equals(
                 typeof(NpgsqlOptionsExtension).GetTypeInfo().Assembly.GetName().Name,

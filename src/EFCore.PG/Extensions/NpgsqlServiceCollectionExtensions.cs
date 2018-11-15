@@ -59,7 +59,7 @@ namespace Microsoft.Extensions.DependencyInjection
         ///         }
         ///     </code>
         /// </example>
-        /// <param name="serviceCollection"> The <see cref="IServiceCollection" /> to add services to. </param>
+        /// <param name="serviceCollection">The <see cref="IServiceCollection" /> to add services to.</param>
         /// <returns>
         ///     A builder that allows further Entity Framework specific setup of the <see cref="IServiceCollection" />.
         /// </returns>

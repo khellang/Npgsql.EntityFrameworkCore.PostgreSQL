@@ -18,8 +18,8 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         /// Configures the context to connect to a PostgreSQL database with Npgsql.
         /// </summary>
-        /// <param name="optionsBuilder"> A builder for setting options on the context. </param>
-        /// <param name="connectionString"> The connection string of the database to connect to. </param>
+        /// <param name="optionsBuilder">A builder for setting options on the context.</param>
+        /// <param name="connectionString">The connection string of the database to connect to.</param>
         /// <param name="npgsqlOptionsAction">An optional action to allow additional Npgsql-specific configuration.</param>
         /// <returns>
         /// The options builder so that further configuration can be chained.
@@ -44,7 +44,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         /// Configures the context to connect to a PostgreSQL database with Npgsql.
         /// </summary>
-        /// <param name="optionsBuilder"> A builder for setting options on the context. </param>
+        /// <param name="optionsBuilder">A builder for setting options on the context.</param>
         /// <param name="connection">
         /// An existing <see cref="DbConnection" /> to be used to connect to the database. If the connection is
         /// in the open state then EF will not open or close the connection. If the connection is in the closed
@@ -74,8 +74,8 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         /// Configures the context to connect to a PostgreSQL database with Npgsql.
         /// </summary>
-        /// <param name="optionsBuilder"> A builder for setting options on the context. </param>
-        /// <param name="connectionString"> The connection string of the database to connect to. </param>
+        /// <param name="optionsBuilder">A builder for setting options on the context.</param>
+        /// <param name="connectionString">The connection string of the database to connect to.</param>
         /// <param name="npgsqlOptionsAction">An optional action to allow additional Npgsql-configuration.</param>
         /// <returns>
         /// The options builder so that further configuration can be chained.
@@ -92,7 +92,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         /// Configures the context to connect to a PostgreSQL database with Npgsql.
         /// </summary>
-        /// <param name="optionsBuilder"> A builder for setting options on the context. </param>
+        /// <param name="optionsBuilder">A builder for setting options on the context.</param>
         /// <param name="connection">
         /// An existing <see cref="DbConnection" /> to be used to connect to the database. If the connection is
         /// in the open state then EF will not open or close the connection. If the connection is in the closed

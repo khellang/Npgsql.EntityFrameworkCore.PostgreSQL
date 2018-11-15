@@ -12,17 +12,17 @@ namespace Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionVisitors
         /// <summary>
         ///     Creates a new instance of <see cref="SqlTranslatingExpressionVisitorFactory" />.
         /// </summary>
-        /// <param name="dependencies"> Parameter object containing dependencies for this service. </param>
+        /// <param name="dependencies">Parameter object containing dependencies for this service.</param>
         public NpgsqlSqlTranslatingExpressionVisitorFactory([NotNull] SqlTranslatingExpressionVisitorDependencies dependencies)
             : base(dependencies) {}
 
         /// <summary>
         ///     Creates a new NpgsqlTranslatingExpressionVisitor.
         /// </summary>
-        /// <param name="queryModelVisitor"> The query model visitor. </param>
-        /// <param name="targetSelectExpression"> The target select expression. </param>
-        /// <param name="topLevelPredicate"> The top level predicate. </param>
-        /// <param name="inProjection"> true if we are translating a projection. </param>
+        /// <param name="queryModelVisitor">The query model visitor.</param>
+        /// <param name="targetSelectExpression">The target select expression.</param>
+        /// <param name="topLevelPredicate">The top level predicate.</param>
+        /// <param name="inProjection">true if we are translating a projection.</param>
         /// <returns>
         ///     A SqlTranslatingExpressionVisitor.
         /// </returns>

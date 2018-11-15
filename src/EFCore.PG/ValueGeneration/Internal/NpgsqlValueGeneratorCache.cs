@@ -20,7 +20,7 @@ namespace Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal
         /// <summary>
         ///     Initializes a new instance of the <see cref="ValueGeneratorCache" /> class.
         /// </summary>
-        /// <param name="dependencies"> Parameter object containing dependencies for this service. </param>
+        /// <param name="dependencies">Parameter object containing dependencies for this service.</param>
         public NpgsqlValueGeneratorCache([NotNull] ValueGeneratorCacheDependencies dependencies)
             : base(dependencies)
         {

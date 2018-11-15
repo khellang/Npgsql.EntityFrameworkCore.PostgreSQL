@@ -16,9 +16,9 @@ namespace Microsoft.EntityFrameworkCore
         /// <remarks>
         /// http://www.postgresql.org/docs/current/static/sql-createindex.html
         /// </remarks>
-        /// <param name="indexBuilder"> The builder for the index being configured. </param>
-        /// <param name="method"> The name of the index. </param>
-        /// <returns> A builder to further configure the index. </returns>
+        /// <param name="indexBuilder">The builder for the index being configured.</param>
+        /// <param name="method">The name of the index.</param>
+        /// <returns>A builder to further configure the index.</returns>
         public static IndexBuilder ForNpgsqlHasMethod([NotNull] this IndexBuilder indexBuilder, [CanBeNull] string method)
         {
             Check.NotNull(indexBuilder, nameof(indexBuilder));
@@ -35,9 +35,9 @@ namespace Microsoft.EntityFrameworkCore
         /// <remarks>
         /// https://www.postgresql.org/docs/current/static/indexes-opclass.html
         /// </remarks>
-        /// <param name="indexBuilder"> The builder for the index being configured. </param>
-        /// <param name="operators"> The operators to use for each column. </param>
-        /// <returns> A builder to further configure the index. </returns>
+        /// <param name="indexBuilder">The builder for the index being configured.</param>
+        /// <param name="operators">The operators to use for each column.</param>
+        /// <returns>A builder to further configure the index.</returns>
         public static IndexBuilder ForNpgsqlHasOperators([NotNull] this IndexBuilder indexBuilder, [CanBeNull] params string[] operators)
         {
             Check.NotNull(indexBuilder, nameof(indexBuilder));

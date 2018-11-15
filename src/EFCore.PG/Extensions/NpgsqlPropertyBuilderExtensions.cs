@@ -21,10 +21,10 @@ namespace Microsoft.EntityFrameworkCore
         ///     Configures the property to use a sequence-based hi-lo pattern to generate values for new entities,
         ///     when targeting PostgreSQL. This method sets the property to be <see cref="ValueGenerated.OnAdd" />.
         /// </summary>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <param name="name"> The comment of the sequence. </param>
-        /// <param name="schema"> The schema of the sequence. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <param name="name">The comment of the sequence.</param>
+        /// <param name="schema">The schema of the sequence.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder ForNpgsqlUseSequenceHiLo(
             [NotNull] this PropertyBuilder propertyBuilder,
             [CanBeNull] string name = null,
@@ -57,10 +57,10 @@ namespace Microsoft.EntityFrameworkCore
         ///     Configures the property to use a sequence-based hi-lo pattern to generate values for new entities,
         ///     when targeting PostgreSQL. This method sets the property to be <see cref="ValueGenerated.OnAdd" />.
         /// </summary>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <param name="name"> The comment of the sequence. </param>
-        /// <param name="schema"> The schema of the sequence. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <param name="name">The comment of the sequence.</param>
+        /// <param name="schema">The schema of the sequence.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder<TProperty> ForNpgsqlUseSequenceHiLo<TProperty>(
             [NotNull] this PropertyBuilder<TProperty> propertyBuilder,
             [CanBeNull] string name = null,
@@ -75,8 +75,8 @@ namespace Microsoft.EntityFrameworkCore
         ///     Configures the property to use the PostgreSQL SERIAL feature to generate values for new entities,
         ///     when targeting PostgreSQL. This method sets the property to be <see cref="ValueGenerated.OnAdd" />.
         /// </summary>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder UseNpgsqlSerialColumn(
             [NotNull] this PropertyBuilder propertyBuilder)
         {
@@ -91,9 +91,9 @@ namespace Microsoft.EntityFrameworkCore
         ///     Configures the property to use the PostgreSQL SERIAL feature to generate values for new entities,
         ///     when targeting PostgreSQL. This method sets the property to be <see cref="ValueGenerated.OnAdd" />.
         /// </summary>
-        /// <typeparam name="TProperty"> The type of the property being configured. </typeparam>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <typeparam name="TProperty">The type of the property being configured.</typeparam>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder<TProperty> UseNpgsqlSerialColumn<TProperty>(
             [NotNull] this PropertyBuilder<TProperty> propertyBuilder)
             => (PropertyBuilder<TProperty>)UseNpgsqlSerialColumn((PropertyBuilder)propertyBuilder);
@@ -111,8 +111,8 @@ namespace Microsoft.EntityFrameworkCore
         /// </para>
         /// <para>Available only starting PostgreSQL 10.</para>
         /// </summary>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder UseNpgsqlIdentityAlwaysColumn(
             [NotNull] this PropertyBuilder propertyBuilder)
         {
@@ -136,8 +136,8 @@ namespace Microsoft.EntityFrameworkCore
         /// </para>
         /// <para>Available only starting PostgreSQL 10.</para>
         /// </summary>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder UseNpgsqlIdentityByDefaultColumn(
             [NotNull] this PropertyBuilder propertyBuilder)
         {
@@ -157,9 +157,9 @@ namespace Microsoft.EntityFrameworkCore
         /// </para>
         /// <para>Available only starting PostgreSQL 10.</para>
         /// </summary>
-        /// <typeparam name="TProperty"> The type of the property being configured. </typeparam>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <typeparam name="TProperty">The type of the property being configured.</typeparam>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder<TProperty> UseNpgsqlIdentityByDefaultColumn<TProperty>(
             [NotNull] this PropertyBuilder<TProperty> propertyBuilder)
             => (PropertyBuilder<TProperty>)UseNpgsqlIdentityByDefaultColumn((PropertyBuilder)propertyBuilder);
@@ -173,8 +173,8 @@ namespace Microsoft.EntityFrameworkCore
         /// </para>
         /// <para>Available only starting PostgreSQL 10.</para>
         /// </summary>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder UseNpgsqlIdentityColumn(
             [NotNull] this PropertyBuilder propertyBuilder)
             => propertyBuilder.UseNpgsqlIdentityByDefaultColumn();
@@ -188,9 +188,9 @@ namespace Microsoft.EntityFrameworkCore
         /// </para>
         /// <para>Available only starting PostgreSQL 10.</para>
         /// </summary>
-        /// <typeparam name="TProperty"> The type of the property being configured. </typeparam>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <typeparam name="TProperty">The type of the property being configured.</typeparam>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder<TProperty> UseNpgsqlIdentityColumn<TProperty>(
             [NotNull] this PropertyBuilder<TProperty> propertyBuilder)
             => propertyBuilder.UseNpgsqlIdentityByDefaultColumn();
@@ -202,9 +202,9 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         ///     Configures the comment set on the column when targeting Npgsql.
         /// </summary>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <param name="comment"> The comment of the column. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <param name="comment">The comment of the column.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder ForNpgsqlHasComment(
             [NotNull] this PropertyBuilder propertyBuilder,
             [CanBeNull] string comment)
@@ -220,9 +220,9 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         ///     Configures the comment set on the column when targeting Npgsql.
         /// </summary>
-        /// <param name="propertyBuilder"> The builder for the property being configured. </param>
-        /// <param name="comment"> The comment of the column. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="propertyBuilder">The builder for the property being configured.</param>
+        /// <param name="comment">The comment of the column.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static PropertyBuilder<TEntity> ForNpgsqlHasComment<TEntity>(
             [NotNull] this PropertyBuilder<TEntity> propertyBuilder,
             [CanBeNull] string comment)

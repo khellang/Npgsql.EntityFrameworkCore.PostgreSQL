@@ -39,10 +39,10 @@ namespace Microsoft.EntityFrameworkCore
         /// <remarks>
         /// See https://www.postgresql.org/docs/current/static/sql-createtable.html#SQL-CREATETABLE-STORAGE-PARAMETERS
         /// </remarks>
-        /// <param name="entityTypeBuilder"> The builder for the entity type being configured. </param>
-        /// <param name="parameterName"> The name of the storage parameter. </param>
-        /// <param name="parameterValue"> The value of the storage parameter. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="entityTypeBuilder">The builder for the entity type being configured.</param>
+        /// <param name="parameterName">The name of the storage parameter.</param>
+        /// <param name="parameterValue">The value of the storage parameter.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static EntityTypeBuilder ForNpgsqlSetStorageParameter(
             [NotNull] this EntityTypeBuilder entityTypeBuilder, string parameterName, object parameterValue)
         {
@@ -59,10 +59,10 @@ namespace Microsoft.EntityFrameworkCore
         /// <remarks>
         /// See https://www.postgresql.org/docs/current/static/sql-createtable.html#SQL-CREATETABLE-STORAGE-PARAMETERS
         /// </remarks>
-        /// <param name="entityTypeBuilder"> The builder for the entity type being configured. </param>
-        /// <param name="parameterName"> The name of the storage parameter. </param>
-        /// <param name="parameterValue"> The value of the storage parameter. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="entityTypeBuilder">The builder for the entity type being configured.</param>
+        /// <param name="parameterName">The name of the storage parameter.</param>
+        /// <param name="parameterValue">The value of the storage parameter.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static EntityTypeBuilder<TEntity> ForNpgsqlSetStorageParameter<TEntity>(
             [NotNull] this EntityTypeBuilder<TEntity> entityTypeBuilder, string parameterName, object parameterValue)
             where TEntity : class
@@ -75,9 +75,9 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         ///     Configures the comment set on the table when targeting Npgsql.
         /// </summary>
-        /// <param name="entityTypeBuilder"> The builder for the entity type being configured. </param>
-        /// <param name="comment"> The name of the table. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <param name="entityTypeBuilder">The builder for the entity type being configured.</param>
+        /// <param name="comment">The name of the table.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static EntityTypeBuilder ForNpgsqlHasComment(
             [NotNull] this EntityTypeBuilder entityTypeBuilder,
             [CanBeNull] string comment)
@@ -93,10 +93,10 @@ namespace Microsoft.EntityFrameworkCore
         /// <summary>
         ///     Configures the comment set on the table when targeting Npgsql.
         /// </summary>
-        /// <typeparam name="TEntity"> The entity type being configured. </typeparam>
-        /// <param name="entityTypeBuilder"> The builder for the entity type being configured. </param>
-        /// <param name="comment"> The name of the table. </param>
-        /// <returns> The same builder instance so that multiple calls can be chained. </returns>
+        /// <typeparam name="TEntity">The entity type being configured.</typeparam>
+        /// <param name="entityTypeBuilder">The builder for the entity type being configured.</param>
+        /// <param name="comment">The name of the table.</param>
+        /// <returns>The same builder instance so that multiple calls can be chained.</returns>
         public static EntityTypeBuilder<TEntity> ForNpgsqlHasComment<TEntity>(
             [NotNull] this EntityTypeBuilder<TEntity> entityTypeBuilder,
             [CanBeNull] string comment)
